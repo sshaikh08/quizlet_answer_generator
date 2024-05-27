@@ -1,6 +1,9 @@
 def check_for_filename(file_name_input, directory) -> bool:
     try:
+        pass
 
+    except:
+        pass
 
 
 def confirm_file_name(file_name_input: str) -> None:
@@ -39,7 +42,6 @@ def get_file_name() -> str:  # Code Review: I'm guessing there is a modernized/b
 
 
 if __name__ == '__main__':
-
     file_name = get_file_name()
 
     print(f"{file_name}")

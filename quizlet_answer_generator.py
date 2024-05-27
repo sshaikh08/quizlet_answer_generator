@@ -1,6 +1,6 @@
 from sys import exit
 
-from my_python_tools.user_input import get_file_name
+from my_python_tools.filename_targeting import get_file_name
 
 WELCOME_MESSAGE = "Welcome to the Quizlet Solutions Generator"
 
