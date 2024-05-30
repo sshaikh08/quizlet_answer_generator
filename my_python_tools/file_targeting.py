@@ -1,9 +1,9 @@
-def check_for_filename(file_name_input, directory) -> bool:
-    try:
-        pass
+from os import path
 
-    except:
-        pass
+
+# Code Review: Check for a better way
+def check_and_create_file(file_name) -> None:
+    pass
 
 
 def confirm_file_name(file_name_input: str) -> None:
@@ -42,6 +42,9 @@ def get_file_name() -> str:  # Code Review: I'm guessing there is a modernized/b
 
 
 if __name__ == '__main__':
-    file_name = get_file_name()
 
-    print(f"{file_name}")
+    test_1 = False
+    if test_1:
+        file_name = get_file_name()
+
+        print(f"{file_name}")
