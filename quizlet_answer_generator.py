@@ -22,10 +22,10 @@ if __name__ == '__main__':
 #                                           coordination with multiple functions called in that particular module.
 #                                           Use the library "Shelve" in rewrite.
 
-    check_for_directory(quizlet_svd_dir_pth)
+    check_and_create_dir(quizlet_svd_dir_pth)
 
     solutions_file_name = get_file_name()
 
     target_file_path = path.join(target_main_dir, solutions_file_name)
 
-    exit(0)  # Code Review: Is this correct usage? Trying to formally end the program
+    exit(0)  # Code Review: Is this correct usage? Trying to formally end/exit the program
