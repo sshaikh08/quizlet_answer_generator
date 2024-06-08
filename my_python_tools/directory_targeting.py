@@ -12,7 +12,7 @@ def check_for_directory(directory_path: str | Path) -> None:
             raise FileNotFoundError
 
     except FileNotFoundError as fne:
-        print(f"check_for_directory(): {directory_path} does not exist." # Rewrite This: Use Logging instead of 
+        print(f"check_for_directory(): {directory_path} does not exist."  # Rewrite This: Use Logging instead of 
               #                                                            "print()"ing it
               f"\n"
               f"Check if the enter path exists and try again")
@@ -31,16 +31,17 @@ def check_and_create_dir(dir_path: str | Path) -> None:
 
 
 if __name__ == '__main__':
+    home_directory_path = path.expanduser('~')
 
     check_for_directory_test_1 = False
 
-    check_and_create_dir_test_1 = False
-
     if check_for_directory_test_1:
-        home_directory_path = path.expanduser('~')
         documents_directory = path.join(home_directory_path, 'Documents')
 
         check_for_directory(documents_directory)
+
+
+    check_and_create_dir_test_1 = False
 
     if check_and_create_dir_test_1:
         test_2_path = Path.cwd().parent.absolute()
