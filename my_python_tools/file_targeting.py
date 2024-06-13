@@ -34,6 +34,8 @@ def confirm_file_name(file_name_input: str) -> bool:
 # Code Review: I'm guessing there is a modernized/better way to do this? I.e. getting a name from the user, and verifying
 #              that the name is valid or not already taken in some capacity, in this case, a file with name entered that
 #              already exists?
+
+# Phil: Think about prepending name with date
 def get_file_path(dir_to_save_file, file_type_ext) -> str:
     enter_filename_msg = "Please enter a file name:"
     reenter_filename_msg = "Please enter a valid file name:"
